@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AgData.MyService.Domain\AgData.MyService.Domain.csproj" />
+    <ProjectReference Include="..\AgData.MyService.Models\AgData.MyService.Models.csproj" />
+    <ProjectReference Include="..\Pervasive.Infrastructure.Asp\Pervasive.Infrastructure.Asp.csproj" />
+    <ProjectReference Include="..\Pervasive.Infrastructure.CosmosDb\Pervasive.Infrastructure.CosmosDb.csproj" />
+    <ProjectReference Include="..\Pervasive.Infrastructure.Requests\Pervasive.Infrastructure.Requests.csproj" />
+    <ProjectReference Include="..\Pervasive.Infrastructure.Validations\Pervasive.Infrastructure.Validations.csproj" />
+  </ItemGroup>
+
+</Project>

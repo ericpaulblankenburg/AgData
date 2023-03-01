@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.1.0" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.32.0-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AgData.MyService.Models\AgData.MyService.Models.csproj" />
+    <ProjectReference Include="..\Pervasive.Infrastructure.CosmosDb\Pervasive.Infrastructure.CosmosDb.csproj" />
+    <ProjectReference Include="..\Pervasive.Infrastructure.Requests\Pervasive.Infrastructure.Requests.csproj" />
+    <ProjectReference Include="..\Pervasive.Infrastructure.Validations\Pervasive.Infrastructure.Validations.csproj" />
+  </ItemGroup>
+
+</Project>
